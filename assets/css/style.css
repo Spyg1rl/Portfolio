@@ -766,7 +766,7 @@ img {
 }
 
 .work__private {
-  margin-top: auto;
+  margin-top: 1rem;
   border: 1px solid rgba(128, 128, 128, 0.25);
   border-radius: .6rem;
   padding: .65rem .8rem;
