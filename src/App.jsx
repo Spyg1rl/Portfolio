@@ -23,37 +23,37 @@ const works = [
     {
         href: 'https://spyg1rl.github.io/jogo-do-mario/index.html',
         img: work1,
-        alt: 'Projeto Wikiflix',
+        alt: 'Jogo Mario Bros.',
         technologies: ['HTML', 'CSS', 'JavaScript'],
     },
     {
         href: 'https://github.com/Spyg1rl/Meus-Projetos-CSharp',
         img: work2,
-        alt: 'Projeto CSharp',
+        alt: 'C#',
         technologies: ['C#', '.NET', 'SQL'],
     },
     {
         href: 'https://spyg1rl.github.io/-Construindo-uma-Pokedex-com-JavaScript/',
         img: work3,
-        alt: 'Projeto Pokedex',
+        alt: 'Pokedex',
         technologies: ['HTML', 'CSS', 'JavaScript'],
     },
     {
         href: 'https://github.com/Spyg1rl/Projeto-Inicial-Loja-Virtual-com-ReactNative-Android',
         img: work4,
-        alt: 'Projeto Loja Virtual',
+        alt: 'Loja Virtual',
         technologies: ['React Native', 'JavaScript', 'Android'],
     },
     {
         href: 'https://github.com/Spyg1rl/Iniciando-Projetos-em-React/tree/main?tab=readme-ov-file',
         img: work5,
-        alt: 'Projeto React 1',
+        alt: 'Home da Aplicação de filmes',
         technologies: ['React', 'JavaScript', 'CSS'],
     },
     {
         href: 'https://github.com/Spyg1rl/Iniciando-Projetos-em-React/tree/main?tab=readme-ov-file',
         img: work6,
-        alt: 'Projeto React 2',
+        alt: 'Sistema de Chamado',
         technologies: ['React', 'Node.js', 'JavaScript'],
     },
     {
