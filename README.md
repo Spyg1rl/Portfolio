@@ -31,8 +31,6 @@ yarn build
 
 Este projeto está configurado com `base: '/Portfolio/'` para funcionar no repositório `Spyg1rl/Portfolio`.
 
-Para publicar corretamente (sem erro de `src/main.jsx` 404):
-
 ```bash
 yarn deploy
 ```
