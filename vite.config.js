@@ -7,7 +7,7 @@ export default defineConfig({
   define: {
     global: 'globalThis',
     'process.env': {},
-    'process.env.NODE_ENV': JSON.stringify('development'),
+    'process.env.NODE_ENV': JSON.stringify('production'),
     'process.env.TEST_NATIVE_PLATFORM': JSON.stringify('web'),
   },
   optimizeDeps: {
@@ -15,7 +15,7 @@ export default defineConfig({
       define: {
         global: 'globalThis',
         'process.env': '{}',
-        'process.env.NODE_ENV': '"development"',
+        'process.env.NODE_ENV': '"production"',
         'process.env.TEST_NATIVE_PLATFORM': '"web"',
       },
     },
