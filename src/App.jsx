@@ -230,6 +230,7 @@ const SKILLS_LIST = [
     ['bx bx-desktop skills__icon', 'LINUX / WINDOWS / MAC', 'skills__os', '80%'],
 ];
 
+import work8 from '../assets/img/work8.png';
 const works = [
     {
         href: 'https://spyg1rl.github.io/jogo-do-mario/index.html',
@@ -280,6 +281,21 @@ const works = [
         alt: 'App Mobile - Fiscalização Sanitária',
         technologies: ['React Native', 'TypeScript', 'JavaScript', 'SQLite', '.NET'],
         isPrivate: true,
+    },
+    {
+        href: 'https://github.com/Spyg1rl/ClincaDeEstetica',
+        img: work8,
+        alt: 'Clínica de Estética',
+        technologies: [
+            'Next.js',
+            'React',
+            'TypeScript',
+            'Node.js',
+            'Express',
+            'Prisma',
+            'SQLite',
+            'CSS'
+        ],
     },
 ];
 
