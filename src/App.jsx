@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import ScrollReveal from 'scrollreveal';
 
 import logo from '../assets/img/Logo-mobile.png';
-import aboutImg from '../assets/img/about.jpeg';
+import aboutVideo from '../assets/video/animacao.mp4';
 import work1 from '../assets/img/wikiflix.png';
 import work2 from '../assets/img/work2.png';
 import work3 from '../assets/img/work3.png';
@@ -573,7 +573,7 @@ function App() {
                 <nav className="nav bd-grid">
                     <div>
                         <a href="#home" className="nav__logo">
-                            <img src={logo} alt="Logo Adriana Almeida" />
+                            {/* Logo removido do header conforme solicitado */}
                         </a>
                     </div>
 
@@ -676,7 +676,7 @@ function App() {
                     </div>
 
                     <div className="home__img">
-                        <img className="home__profile-img" src={aboutImg} alt="Foto de Adriana Almeida" />
+                        <video className="home__profile-img" src={aboutVideo} autoPlay loop muted playsInline style={{width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%'}} />
                     </div>
                 </section>
 
