@@ -490,41 +490,26 @@ function App() {
     };
 
     const renderPreferenceControls = (scope) => (
+
         <>
             <div className="nav__theme-wrapper">
                 <button
                     className="nav__theme"
                     type="button"
                     onClick={() => {
-                        setThemeMenuOpen((previous) => !previous);
+                        setThemePreference(themePreference === 'dark' ? 'light' : 'dark');
+                        setThemeMenuOpen(false);
                         setLanguageMenuOpen(false);
                     }}
-                    aria-label="Selecionar tema"
-                    aria-expanded={themeMenuOpen}
-                    aria-controls={`theme-options-${scope}`}
-                    title="Selecionar tema"
+                    aria-label={themePreference === 'dark' ? 'Ativar tema claro' : 'Ativar tema escuro'}
+                    title={themePreference === 'dark' ? 'Ativar tema claro' : 'Ativar tema escuro'}
                 >
-                    <i className="bx bx-palette" />
+                    {themePreference === 'dark' ? (
+                        <i className="bx bx-sun" />
+                    ) : (
+                        <i className="bx bx-moon" />
+                    )}
                 </button>
-
-                {themeMenuOpen ? (
-                    <ul className="nav__theme-menu" id={`theme-options-${scope}`}>
-                        {themeOptions.map((option) => (
-                            <li key={option.value}>
-                                <button
-                                    type="button"
-                                    className={`nav__link nav__theme-link ${themePreference === option.value ? 'nav__theme-link--selected' : ''}`}
-                                    onClick={() => {
-                                        setThemePreference(option.value);
-                                        closeMenu();
-                                    }}
-                                >
-                                    {option.label}
-                                </button>
-                            </li>
-                        ))}
-                    </ul>
-                ) : null}
             </div>
 
             <div className="nav__language-wrapper">
